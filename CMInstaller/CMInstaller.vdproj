@@ -15,14 +15,8 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_0F2C36061416A07EC19BA1F822009E35"
+        "MsmKey" = "8:_2F0125190CDEB2CB23CA92F419B5003F"
         "OwnerKey" = "8:_D93483BADC9846B7A94C2A93C94B2698"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_0F2C36061416A07EC19BA1F822009E35"
-        "OwnerKey" = "8:_883EB0C819A4F5B1DA76CE36D0F77426"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -33,14 +27,26 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_594196C02CF048F9B55CDC9A83A332B0"
+        "MsmKey" = "8:_54F58806E8254379B29494EEEC484410"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_883EB0C819A4F5B1DA76CE36D0F77426"
+        "MsmKey" = "8:_76C2C44D38604E8F8CBC07BEFC232109"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7D86F339C5FEA18C7569EA8F117D4AC2"
         "OwnerKey" = "8:_D93483BADC9846B7A94C2A93C94B2698"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7D86F339C5FEA18C7569EA8F117D4AC2"
+        "OwnerKey" = "8:_2F0125190CDEB2CB23CA92F419B5003F"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -57,24 +63,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_DD08CDD843B8F95E545A564B5BD49197"
-        "OwnerKey" = "8:_0F2C36061416A07EC19BA1F822009E35"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_DD08CDD843B8F95E545A564B5BD49197"
-        "OwnerKey" = "8:_D93483BADC9846B7A94C2A93C94B2698"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_E33F233863C2400DB60190CB52627825"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_D93483BADC9846B7A94C2A93C94B2698"
         "MsmSig" = "8:_UNDEFINED"
@@ -82,19 +70,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_883EB0C819A4F5B1DA76CE36D0F77426"
+        "OwnerKey" = "8:_2F0125190CDEB2CB23CA92F419B5003F"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0F2C36061416A07EC19BA1F822009E35"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_DD08CDD843B8F95E545A564B5BD49197"
+        "OwnerKey" = "8:_7D86F339C5FEA18C7569EA8F117D4AC2"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -214,20 +196,20 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0F2C36061416A07EC19BA1F822009E35"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_2F0125190CDEB2CB23CA92F419B5003F"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:CombatManager.Core, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:CombatViewService, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
-                    "_0F2C36061416A07EC19BA1F822009E35"
+                    "_2F0125190CDEB2CB23CA92F419B5003F"
                     {
-                    "Name" = "8:CombatManager.Core.dll"
+                    "Name" = "8:CombatViewService.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:CombatManager.Core.dll"
+            "SourcePath" = "8:CombatViewService.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_D0CCFF9FB43041529C5CEBDAF673DD43"
@@ -276,7 +258,7 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_594196C02CF048F9B55CDC9A83A332B0"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_54F58806E8254379B29494EEEC484410"
             {
             "SourcePath" = "8:..\\Dependencies\\Sqlite3_64.dll"
             "TargetName" = "8:Sqlite3_64.dll"
@@ -296,20 +278,40 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_883EB0C819A4F5B1DA76CE36D0F77426"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_76C2C44D38604E8F8CBC07BEFC232109"
+            {
+            "SourcePath" = "8:..\\Dependencies\\Sqlite3_32.dll"
+            "TargetName" = "8:Sqlite3_32.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_D0CCFF9FB43041529C5CEBDAF673DD43"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7D86F339C5FEA18C7569EA8F117D4AC2"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:CombatViewService, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:CombatManager.Core, Version=1.4.2.0, Culture=neutral, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
-                    "_883EB0C819A4F5B1DA76CE36D0F77426"
+                    "_7D86F339C5FEA18C7569EA8F117D4AC2"
                     {
-                    "Name" = "8:CombatViewService.dll"
+                    "Name" = "8:CombatManager.Core.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:CombatViewService.dll"
+            "SourcePath" = "8:CombatManager.Core.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_D0CCFF9FB43041529C5CEBDAF673DD43"
@@ -356,57 +358,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_DD08CDD843B8F95E545A564B5BD49197"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Mono.Data.Sqlite, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_DD08CDD843B8F95E545A564B5BD49197"
-                    {
-                    "Name" = "8:Mono.Data.Sqlite.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Mono.Data.Sqlite.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_D0CCFF9FB43041529C5CEBDAF673DD43"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E33F233863C2400DB60190CB52627825"
-            {
-            "SourcePath" = "8:..\\Dependencies\\Sqlite3_32.dll"
-            "TargetName" = "8:Sqlite3_32.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_D0CCFF9FB43041529C5CEBDAF673DD43"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
         }
@@ -476,15 +427,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Combat Manager"
-        "ProductCode" = "8:{621482AE-15A3-49C7-991E-DEBD02212954}"
-        "PackageCode" = "8:{D60E1FB6-8DD7-491C-BD3D-DF2AEED4F32D}"
+        "ProductCode" = "8:{32D89E66-156F-4A3F-A7EE-33E443E15382}"
+        "PackageCode" = "8:{05F1D1F3-750C-4F71-B84F-68C059C52669}"
         "UpgradeCode" = "8:{D3BA9248-E13B-4D16-A80A-2F435C82C97B}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.4.1"
+        "ProductVersion" = "8:1.4.2"
         "Manufacturer" = "8:Kyle Olson"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -1012,7 +963,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_D93483BADC9846B7A94C2A93C94B2698"
             {
-            "SourcePath" = "8:"
+            "SourcePath" = "8:..\\CombatManager\\obj\\Debug\\CombatManager.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_D0CCFF9FB43041529C5CEBDAF673DD43"

@@ -1,3 +1,24 @@
+/*
+ *  MainWindow.xaml.cs
+ *
+ *  Copyright (C) 2010-2012 Kyle Olson, kyle@kyleolson.com
+ *
+ *  This program is free software; you can redistribute it and/or
+ *  modify it under the terms of the GNU General Public License
+ *  as published by the Free Software Foundation; either version 2
+ *  of the License, or (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ * 
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program; if not, write to the Free Software
+ *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ *
+ */
+
 ﻿using System;
 using System.Data;
 using System.ComponentModel;
@@ -1058,7 +1079,7 @@ namespace CombatManager
                     if (chMove.IsMonster != toMonster)
                     {
 
-                        MoveCharacterList(chMove, toMonster);
+                        MoveCharacter(chMove, toMonster);
 
                         combatState.Characters.Remove(chMove);
 
@@ -4822,10 +4843,9 @@ namespace CombatManager
             {
                 List<Character> list = GetViewSelectedCharacters(sender);
 
-                foreach (Character ch in list)
-                {
-                    MoveCharacterList(ch, false);
-                }
+
+                MoveCharacterList(list, false);
+
             }
         }
 
@@ -4835,19 +4855,29 @@ namespace CombatManager
             {
                 List<Character> list = GetViewSelectedCharacters(sender);
 
-                foreach (Character ch in list)
-                {
-                    MoveCharacterList(ch, true);
-                }
+                MoveCharacterList(list, true);
+
             }
         }
 
-        private void MoveCharacterList(Character ch, bool monster)
+        private void MoveCharacter(Character ch, bool monster)
         {
 
             combatState.RegroupFollowers(ch);
             combatState.UnlinkLeader(ch);
             ch.IsMonster = monster;
+            playerView.Refresh();
+            monsterView.Refresh();
+        }
+
+        private void MoveCharacterList(IList<Character> chars, bool monster)
+        {
+            foreach (var ch in chars)
+            {
+                combatState.RegroupFollowers(ch);
+                combatState.UnlinkLeader(ch);
+                ch.IsMonster = monster;
+            }
             playerView.Refresh();
             monsterView.Refresh();
         }
