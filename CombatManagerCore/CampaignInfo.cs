@@ -4,12 +4,7 @@ using System.Linq;
 using System.Text;
 using System.ComponentModel;
 using System.Collections.ObjectModel;
-#if !MONO
-using System.Data.Common;
-using ScottsUtils;
-#else
 using Mono.Data.Sqlite;
-#endif
 
 namespace CombatManager
 {
@@ -22,17 +17,7 @@ namespace CombatManager
 
         private Dictionary<DateTime, ObservableCollection<CampaignEvent>> _Events;
 
-#if !MONO
-    //private SQL_Lite sql;
-#else
-		
         private static SqliteConnection eventDB;
-#endif
-
-        private static void PrepareDB()
-        {
-
-        }
 
         public event PropertyChangedEventHandler PropertyChanged;
 

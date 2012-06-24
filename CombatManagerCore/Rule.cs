@@ -11,11 +11,7 @@ using System.Xml.XPath;
 using System.Xml;
 using System.Globalization;
 using System.IO;
-using ScottsUtils;
-#if !MONO
-#else
 using Mono.Data.Sqlite;
-#endif
 
 namespace CombatManager
 {
@@ -42,13 +38,7 @@ namespace CombatManager
         private static List<Rule> ruleList;
         private static SortedDictionary<string, string> types;
         private static Dictionary<string, SortedDictionary<string, string>> subtypes;
-
-#if !MONO
-        private static SQL_Lite sqlDetailsDB;
-#else
-		
         private static SqliteConnection detailsDB;
-#endif
 
         public static void LoadRules()
         {
@@ -109,7 +99,6 @@ namespace CombatManager
             string commandText = "Select details from Rules where ID=?";
             try
             {
-#if MONO
                 if (detailsDB == null)
                 {
                     detailsDB = new SqliteConnection("DbLinqProvider=Sqlite;Data Source=Details.db");
@@ -125,27 +114,6 @@ namespace CombatManager
                 cm.Parameters.Add(p);
 
                 details = (string)cm.ExecuteScalar();
-#else
-                if (sqlDetailsDB == null)
-                {
-                    sqlDetailsDB = new SQL_Lite();
-                    sqlDetailsDB.SkipHeaderRow = true;
-                    sqlDetailsDB.Open("details.db");
-                }
-            
-                RowsRet ret = null;
-
-                ret = sqlDetailsDB.ExecuteCommand(commandText, new object[] { ID });
-
-                if (ret == null || ret.Count() == 0)
-                {
-                    return "";
-                }
-
-                details = ret.Rows[0]["details"];
-
-#endif
-                
             }
             catch (Exception ex)
             {

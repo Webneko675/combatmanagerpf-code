@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Data.SQLite;
+using Mono.Data.Sqlite;
 using System.IO;
 using System.Xml.Linq;
 using CombatManager;
@@ -18,11 +18,13 @@ namespace DetailsRipper
                 File.Delete("Details.db");
             }
 
-            SQLiteConnection cn = new SQLiteConnection("Data Source=Details.db");
+            SqliteConnection cn = new SqliteConnection("Data Source=Details.db");
             cn.Open();
-            var v = cn.CreateCommand();
-            v.CommandText = "Create Table Rules (ID integer primary key, details string)";
-            v.ExecuteNonQuery();
+			using (SqliteCommand v = cn.CreateCommand())
+			{
+				v.CommandText = "Create Table Rules (ID integer primary key, details string)";
+				v.ExecuteNonQuery();
+			}
 
             XDocument docRules = XDocument.Load("Rule.xml");
 
@@ -31,15 +33,17 @@ namespace DetailsRipper
            
             foreach (XElement x in vals)
             {
-                var cm = cn.CreateCommand();
-                cm.CommandText = "Insert into Rules (ID, details) values (?, ?)";
-                var p1 = cm.CreateParameter();
-                p1.Value = x.ElementValue("ID");
-                cm.Parameters.Add(p1);
-                var p2 = cm.CreateParameter();
-                p2.Value = x.ElementValue("Details");
-                cm.Parameters.Add(p2);
-                cm.ExecuteNonQuery();
+				using (SqliteCommand cm = cn.CreateCommand())
+				{
+					cm.CommandText = "Insert into Rules (ID, details) values (?, ?)";
+					var p1 = cm.CreateParameter();
+					p1.Value = x.ElementValue("ID");
+					cm.Parameters.Add(p1);
+					var p2 = cm.CreateParameter();
+					p2.Value = x.ElementValue("Details");
+					cm.Parameters.Add(p2);
+					cm.ExecuteNonQuery();
+				}
                 x.Element("Details").Remove();
             }
 

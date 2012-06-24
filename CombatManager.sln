@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyCreator", "Property
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomItemWeightFixer", "RandomItemWeightFixer\RandomItemWeightFixer.csproj", "{9A7BA3AE-5B2F-4DB2-9EB8-1985BB70B50D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SQL Lite DLL", "SQLite\SQL Lite2010.vcxproj", "{A439CDFA-47B8-4103-91A0-66552227F05C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CombatManagerCore", "CombatManagerCore\CombatManagerCore.csproj", "{89CF9A2F-FAE7-46E5-B2CC-FC478D9662FA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CombatViewService", "CombatViewService\CombatViewService.csproj", "{6A6FBA0A-49B6-4F87-A5BB-8AE48F43E0BA}"
@@ -92,22 +90,6 @@ Global
 		{9A7BA3AE-5B2F-4DB2-9EB8-1985BB70B50D}.Release|x64.ActiveCfg = Release|x86
 		{9A7BA3AE-5B2F-4DB2-9EB8-1985BB70B50D}.Release|x86.ActiveCfg = Release|x86
 		{9A7BA3AE-5B2F-4DB2-9EB8-1985BB70B50D}.Release|x86.Build.0 = Release|x86
-		{A439CDFA-47B8-4103-91A0-66552227F05C}.Debug|Any CPU.ActiveCfg = Debug|x64
-		{A439CDFA-47B8-4103-91A0-66552227F05C}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
-		{A439CDFA-47B8-4103-91A0-66552227F05C}.Debug|Mixed Platforms.Build.0 = Debug|x64
-		{A439CDFA-47B8-4103-91A0-66552227F05C}.Debug|Win32.ActiveCfg = Debug|Win32
-		{A439CDFA-47B8-4103-91A0-66552227F05C}.Debug|Win32.Build.0 = Debug|Win32
-		{A439CDFA-47B8-4103-91A0-66552227F05C}.Debug|x64.ActiveCfg = Debug|x64
-		{A439CDFA-47B8-4103-91A0-66552227F05C}.Debug|x64.Build.0 = Debug|x64
-		{A439CDFA-47B8-4103-91A0-66552227F05C}.Debug|x86.ActiveCfg = Debug|x64
-		{A439CDFA-47B8-4103-91A0-66552227F05C}.Release|Any CPU.ActiveCfg = Release|x64
-		{A439CDFA-47B8-4103-91A0-66552227F05C}.Release|Mixed Platforms.ActiveCfg = Release|x64
-		{A439CDFA-47B8-4103-91A0-66552227F05C}.Release|Mixed Platforms.Build.0 = Release|x64
-		{A439CDFA-47B8-4103-91A0-66552227F05C}.Release|Win32.ActiveCfg = Release|Win32
-		{A439CDFA-47B8-4103-91A0-66552227F05C}.Release|Win32.Build.0 = Release|Win32
-		{A439CDFA-47B8-4103-91A0-66552227F05C}.Release|x64.ActiveCfg = Release|x64
-		{A439CDFA-47B8-4103-91A0-66552227F05C}.Release|x64.Build.0 = Release|x64
-		{A439CDFA-47B8-4103-91A0-66552227F05C}.Release|x86.ActiveCfg = Release|x64
 		{89CF9A2F-FAE7-46E5-B2CC-FC478D9662FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{89CF9A2F-FAE7-46E5-B2CC-FC478D9662FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89CF9A2F-FAE7-46E5-B2CC-FC478D9662FA}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU

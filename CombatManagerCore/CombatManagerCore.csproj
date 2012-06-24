@@ -18,9 +18,10 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>..\CombatManager\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -31,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>..\Dependencies\Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
@@ -42,9 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\SQLite\SQL Lite.cs">
-      <Link>SQL Lite.cs</Link>
-    </Compile>
     <Compile Include="ActiveCondition.cs" />
     <Compile Include="Affliction.cs" />
     <Compile Include="ArmorWeaponChart.cs" />
@@ -63,7 +64,11 @@
     <Compile Include="Condition.cs" />
     <Compile Include="ConditionBonus.cs" />
     <Compile Include="CreatureTypeInfo.cs" />
-    <Compile Include="DBLoader.cs" />
+    <Compile Include="Data\DBLoader.cs" />
+    <Compile Include="Data\ExtSQL.cs" />
+    <Compile Include="Data\Row.cs" />
+    <Compile Include="Data\RowInsensitiveComparer.cs" />
+    <Compile Include="Data\RowsRet.cs" />
     <Compile Include="DBSettings.cs" />
     <Compile Include="DBTableDesc.cs" />
     <Compile Include="DebugLogger.cs" />
@@ -154,6 +159,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
