@@ -72,11 +72,7 @@ namespace CombatManager
 
 		private string GetConnectionString(string fullFilename)
 		{
-#if !MONO
 			return string.Format("Data Source={0};Version=3;", fullFilename);
-#else
-			return fullFilename;
-#endif
 		}
 
 		public DBLoader(String filename)
@@ -149,7 +145,7 @@ namespace CombatManager
 					RowsRet ret = sql.ExecuteCommand("SELECT name FROM sqlite_master WHERE type='table' AND name=?",
 						new object[] { desc.Name });
 
-					if (ret.Rows.Count == 0 && ret.Headers.Cols.Count == 0)
+					if (ret.Rows.Count == 0 && (ret.Headers == null || ret.Headers.Cols.Count == 0))
 					{
 						String str = CreateTableStatementForDesc(desc);
 						sql.ExecuteCommand(str);
